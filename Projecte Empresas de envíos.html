@@ -3,21 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BOOTSTRAP WEBSITE</title>
     <!--BOOTSTRAP CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 
     <!--CUSTOM CSS-->
-    <link rel="stylesheet" href="Flexor/assets/css/style.css">
+    <link rel="stylesheet" href="CSS/main.css">
 </head>
 <body>
-    <h1>Recogida y destino de su paquete</h1>
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="/">
+            <img src="IMG/ddffc5d4d1dc69e05814a5c653cda23f - copia.jpg" style="width: 10%;">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sobre nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Equipo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--HEADER-->
+    <header class="main-header">
+        <div class="background-overlay test-white py-5">
+            <div class="container">
+                <div class="row">
+                    <div classs="col-md-6 text-center justify-content-center align-self-center">
+                        <h1>Recogida y destino de su paquete</h1>
     <form>
-        <span>Desde la Provincia </span><input type="text" size="31" name="entrada1" placeholder="Islas Baleares"  required></br>
-        <span>Ciudad </span><input type="text" size="31" name="entrada2" placeholder="Madrid " required></br>
-        <span>Código Postal </span><input type="text" size="31" name="entrada3" placeholder="ej::28037" required></br>
+        <span>Desde la Provincia </span><input type="text" size="21" class="form-control form-control-lg" name="entrada1" placeholder="Islas Baleares"  required></br>
+        <span>Ciudad </span><input type="text" size="31" class="form-control form-control-lg" name="entrada2" placeholder="Madrid " required></br>
+        <span>Código Postal </span><input type="text" size="31" class="form-control form-control-lg" name="entrada3" placeholder="ej::28037" required></br>
     </br>
         ____________________ </br> </br>
-        Hasta la Provincia <select id="lista">  
+        Hasta la Provincia <select id="lista" class="form-control form-control-lg">  
              <option value="ALA">ÁLAVA</option>
              <option value="ALB">ALBACETE</option>
              <option value="ALI">ALICANTE</option>
@@ -70,9 +101,25 @@
           </select></br>
       
          
-          <span>Ciudad</span><input type="text" size="31" name="entrada3" placeholder="Madrid" required></br>
-          <span>Código Postal </span><input type="text" size="31" name="entrada3" placeholder="ej::28037" required></br>
+          <span>Ciudad</span><input type="text" size="31" class="form-control form-control-lg" name="entrada3" placeholder="Madrid" required></br>
+          <span>Código Postal </span><input type="text" size="31" class="form-control form-control-lg" name="entrada3" placeholder="ej::28037" required></br>
     </form>
+                    </div>
+                    <div class="col-md-5">
+                        <img src="IMG/paque.png" alt="imagen paquete" widht="20" height="30"
+                        class="img-fluid d-none d-sm-block" >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    
     <!--BOOTSTRAP JAVASCRIPT-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  </body>
 </body>
 </html>
