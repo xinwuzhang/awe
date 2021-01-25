@@ -9,6 +9,10 @@
 
     <!--CUSTOM CSS-->
     <link rel="stylesheet" href="CSS/main.css">
+   
+   <script>
+     
+  </script>
 </head>
 <body>
     <!-- NAVIGATION -->
@@ -42,6 +46,8 @@
                 <div class="row">
                     <div classs="col-md-6 text-center justify-content-center align-self-center">
                         <h1>Recogida y destino de su paquete</h1>
+
+    
     <form>
         <span>Desde la Provincia </span><input type="text" size="21" class="form-control form-control-lg" name="entrada1" placeholder="Islas Baleares"  required></br>
         <span>Ciudad </span><input type="text" size="31" class="form-control form-control-lg" name="entrada2" placeholder="Madrid " required></br>
@@ -101,9 +107,14 @@
           </select></br>
       
          
-          <span>Ciudad</span><input type="text" size="31" class="form-control form-control-lg" name="entrada3" placeholder="Madrid" required></br>
-          <span>Código Postal </span><input type="text" size="31" class="form-control form-control-lg" name="entrada3" placeholder="ej::28037" required></br>
+          <span>Ciudad</span><input type="text" size="31" class="form-control form-control-lg" name="entrada4" placeholder="Madrid" required></br>
+          <span>Código Postal </span><input type="text" size="31" class="form-control form-control-lg" name="entrada5" placeholder="ej::28037" required></br>
+          <h1>Paquete</h1>
+          <input class="botón" type="button" value="Listo" onclick="inicio(entrada1.value, entrada2.value, entrada3.value,entrada4.value,entrada5.value)"></br>
+
+
     </form>
+    <div id="salida"></div>
                     </div>
                     <div class="col-md-5">
                         <img src="IMG/paque.png" alt="imagen paquete" widht="20" height="30"
